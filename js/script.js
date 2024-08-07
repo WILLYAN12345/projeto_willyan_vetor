@@ -1,35 +1,41 @@
 var meuFormulario = document.getElementById("formulario");
 meuFormulario.addEventListener("submit", function(event) {
-event.preventDefault();
+  event.preventDefault();
 
-  //Chama a function
-  multiplicar();
+  //Chama a função somar
+  somar();
 
 });
 
 
 //Função somar
-  function multiplicar () {
+/* function somar() {
 
-    let numero1 = Number(document.getElementById("primeiro_numero").value);
+  //Captura o que está dentro do primeiro input no formulário
+  //Number - Transforma o texto capturado em Numero
+  let primeiro_numero_inteiro = Number(document.getElementById("primeiro_numero_inteiro").value);
 
-    console.log(numero1);
+  //Captura o que está dentro do segundo input no formulário
+  //Number - Transforma o texto capturado em Numero
+  let segundo_numero_inteiro = Number(document.getElementById("segundo_numero_inteiro").value);
 
+  //Realiza a soma do valor que está na variável "primeiro_numero_inteiro" com o valor que está na
+  //variável "segundo_numero_inteiro"
+  //E a variável "resultado_soma" recebe o valor da soma
+  let resultado_soma = primeiro_numero_inteiro + segundo_numero_inteiro;
 
-    let numero2 = Number(document.getElementById("segundo_numero").value);
+  //Aqui vai escrever no input "resultado_soma" o valor que está armazenado na variável "resultado_soma"
+  document.getElementById("resultado_soma").value = resultado_soma;
+}
+*/
 
-    console.log(numero2);
+let vetor=[];
 
-    let produto = numero1 * numero2;
-
-    console.log(produto);
-
-    //verificar se o produto de dois numeros é par
-    if (produto % 2 == 0 ) {
-      console.log("é par");
-      document.getElementById("resultado").value = "é par";
-    } else {
-      document.getElementById("resultado").value = "é impar";
-    }
-
+function adicionarValor() {
+  const valor = Number(document.getElementById('tabelaValores')).getElementByTagName('tbody')[0];
+  const celula = novalinha.insertCell(0);
+  celula.text content = valor;
+  document.getElementById('valor').value='';
+  document.getElementById('valor').focus();
+}
 }
